@@ -1,0 +1,17 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+.container {
+	margin: 0 50px;
+	flex: 1 0 auto;
+
+	@media screen and (max-width: $large) {
+		margin: 0 25px;
+	}
+
+	@media screen and (max-width: $medium) {
+		margin: 0 15px;
+	}
+}

@@ -1,0 +1,42 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+.about-wrapper {
+	min-height: calc(100vh - 140px);
+	position: relative;
+
+	@media screen and (max-width: $large) {
+		min-height: calc(100vh - 90px);
+	}
+
+	@media screen and (max-width: $medium) {
+		min-height: calc(100vh - 60px);
+	}
+}
+.home-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.about-text {
+	position: absolute;
+	top: calc(50% - 160px);
+	font-weight: 400;
+	font-size: 40px;
+	max-width: 90%;
+
+	@media screen and (max-width: $extraLarge) {
+		font-size: 32px;
+		top: calc(50% - 120px);
+	}
+
+	@media screen and (max-width: $medium) {
+		font-size: 24px;
+		max-width: 95%;
+	}
+	@media screen and (max-width: $small) {
+		max-width: 100%;
+	}
+}

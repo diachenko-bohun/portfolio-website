@@ -1,0 +1,65 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+.card {
+	width: 49%;
+	margin-bottom: 25px;
+
+	@media screen and (max-width: $medium) {
+		width: 100%;
+	}
+
+	// @media screen and (max-width: $small) {
+	// 	margin: 0 15px;
+	// }
+}
+
+.card-img {
+	width: 100%;
+	background-size: cover;
+	line-height: 0;
+}
+
+.card-inner {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.card-title {
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000000;
+
+	@media screen and (max-width: $large) {
+		font-size: 16px;
+	}
+	&:hover {
+		color: rgb(245, 121, 219);
+		transition: all 0.5s;
+	}
+}
+
+.card-subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	color: #858688;
+
+	@media screen and (max-width: $large) {
+		font-size: 16px;
+	}
+}
+
+.card-year {
+	font-weight: 400;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000000;
+
+	@media screen and (max-width: $large) {
+		font-size: 16px;
+	}
+}

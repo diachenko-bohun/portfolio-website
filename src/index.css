@@ -1,0 +1,50 @@
+html,body {
+  margin: 0!important;
+  font-family: "HerosRegular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+code {
+  font-family: "HerosRegular";
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+button{
+  padding: 0!important;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "HerosBold";
+  src: local("HerosBold"),
+    url("./assets/fonts/TeX-Gyre-Heros/texgyreheros-bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "HerosRegular";
+  src: local("HerosRegular"),
+    url("./assets/fonts/TeX-Gyre-Heros/texgyreheros-regular.otf") format("truetype");
+  font-weight: bold;
+}
+
+
+#root {
+  height: 100%;
+}

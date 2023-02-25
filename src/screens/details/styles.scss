@@ -1,0 +1,18 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+.details-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.details-inner {
+	margin-top: 100px;
+
+	@media screen and (max-width: $large) {
+		margin-top: 120px;
+	}
+}

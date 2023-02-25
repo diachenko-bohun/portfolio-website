@@ -1,0 +1,43 @@
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extraLarge: 1200px;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px;
+
+	@media screen and (max-width: $large) {
+		margin: 25px;
+	}
+
+	@media screen and (max-width: $medium) {
+		margin: 15px;
+	}
+}
+
+.header-logo {
+	width: 49px;
+	height: 39px;
+
+	@media screen and (max-width: $medium) {
+		width: 38px;
+		height: 30px;
+	}
+}
+
+.header-link {
+	font-weight: 400;
+	font-size: 20px;
+	color: #000000;
+
+	@media screen and (max-width: $medium) {
+		font-size: 16px;
+	}
+
+	&:hover {
+		color: rgb(245, 121, 219);
+		transition: all 0.5s;
+	}
+}
