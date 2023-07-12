@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import Container from '../../components/container';
 import List from '../../components/list';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import './styles.scss';
+import AnimCursor from '../../components/animCursor';
+import Loader from '../../components/loader';
+
+import PeopleIcon from '../../assets/img/svg/peopleIcon.svg';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import AnimCursor from '../../components/animCursor';
-import Loader from '../../components/loader';
-import { useSelector } from 'react-redux';
+import './styles.scss';
 
 function Home() {
 	const [loader, setLoader] = useState(false);
@@ -21,6 +23,13 @@ function Home() {
 	useEffect(() => {
 		AOS.init();
 	}, []);
+
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => {
+	// 		setLoader(false);
+	// 	}, 3000);
+	// 	return () => clearTimeout(timer);
+	// }, []);
 
 	if (loader) {
 		return <Loader />;
@@ -39,7 +48,10 @@ function Home() {
 						<p className='about-text'>
 							I’m a UI/UX Designer with 3+ years of professional experience
 							<br />
-							Everything you see here is made by a human for users PEOPLE 👥
+							Everything you see here is made by a human for
+							<span className='about-span'>users</span>
+							PEOPLE
+							<img className='about-img' src={PeopleIcon} alt='icon' />
 						</p>
 					</div>
 					<List data={casesStore.list} />

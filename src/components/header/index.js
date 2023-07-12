@@ -3,9 +3,9 @@ import './styles.scss';
 import ReactLogo from '../../assets/img/svg/logo.svg';
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ position = '' }) {
 	return (
-		<div className='header'>
+		<div className={position === 'fixed' ? 'header header--fixed' : 'header'}>
 			<Link to='/'>
 				<img className='header-logo' src={ReactLogo} alt='logo' />
 			</Link>

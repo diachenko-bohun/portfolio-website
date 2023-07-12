@@ -6,14 +6,27 @@ $extraLarge: 1200px;
 .header {
 	display: flex;
 	justify-content: space-between;
-	margin: 50px;
+	padding: 50px;
+	background-color: transparent;
 
 	@media screen and (max-width: $large) {
-		margin: 25px;
+		padding: 25px;
 	}
 
 	@media screen and (max-width: $medium) {
-		margin: 15px;
+		padding: 15px;
+	}
+
+	&--fixed {
+		position: absolute;
+		width: calc(100% - 100px);
+		@media screen and (max-width: $large) {
+			width: calc(100% - 50px);
+		}
+
+		@media screen and (max-width: $medium) {
+			width: calc(100% - 30px);
+		}
 	}
 }
 

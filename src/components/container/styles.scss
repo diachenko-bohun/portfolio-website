@@ -4,8 +4,8 @@ $large: 992px;
 $extraLarge: 1200px;
 
 .container {
-	margin: 0 50px;
 	flex: 1 0 auto;
+	margin: 0 50px;
 
 	@media screen and (max-width: $large) {
 		margin: 0 25px;
@@ -14,4 +14,12 @@ $extraLarge: 1200px;
 	@media screen and (max-width: $medium) {
 		margin: 0 15px;
 	}
+}
+
+.container-inner {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.container-black {
+	background-color: rgba(0, 0, 0, 1);
 }

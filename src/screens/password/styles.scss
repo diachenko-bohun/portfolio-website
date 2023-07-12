@@ -55,11 +55,24 @@ $extraLarge: 1200px;
 	right: 75px;
 	bottom: calc(50% - 14px);
 	color: #858688;
+	display: flex;
+	align-items: center;
 
 	@media screen and (max-width: $medium) {
 		font-size: 18px;
 		right: 65px;
 		bottom: calc(50% - 13px);
+	}
+
+	&--img {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+
+		@media screen and (max-width: $medium) {
+			width: 25px;
+			height: 25px;
+		}
 	}
 }
 
@@ -85,6 +98,8 @@ $extraLarge: 1200px;
 .password-title {
 	font-weight: 400;
 	font-size: 40px;
+	display: flex;
+	align-items: center;
 
 	@media screen and (max-width: $extraLarge) {
 		font-size: 32px;
@@ -92,6 +107,17 @@ $extraLarge: 1200px;
 
 	@media screen and (max-width: $medium) {
 		font-size: 24px;
+	}
+
+	&--img {
+		width: 40px;
+		height: 40px;
+		margin-left: 10px;
+
+		@media screen and (max-width: $medium) {
+			width: 30px;
+			height: 25px;
+		}
 	}
 }
 

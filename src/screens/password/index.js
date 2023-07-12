@@ -7,6 +7,8 @@ import Footer from '../../components/footer';
 import Header from '../../components/header';
 
 import RightArrow from '../../assets/img/svg/rightArrow.svg';
+import SmileIcon from '../../assets/img/svg/smileIcon.svg';
+import BrokenHeartIcon from '../../assets/img/svg/brokenHeartIcon.svg';
 
 import './styles.scss';
 import AnimCursor from '../../components/animCursor';
@@ -32,8 +34,14 @@ function Password() {
 		} else {
 			setPassword('');
 			dispatch(setAccess(true));
-			navigate(`/details/${id}`);
+			navigate(`/details-${id}`);
 			console.log('success!!!');
+		}
+	};
+
+	const handleKeyPress = e => {
+		if (e.key === 'Enter') {
+			passwordBtnClick();
 		}
 	};
 	return (
@@ -42,7 +50,10 @@ function Password() {
 			<Header />
 			<Container>
 				<div className='password-inner'>
-					<h4 className='password-title'>Glad to see you here ☺️ </h4>
+					<h4 className='password-title'>
+						Glad to see you here
+						<img className='password-title--img' src={SmileIcon} alt='icon' />
+					</h4>
 					<div className='password-field'>
 						<input
 							className='password-input'
@@ -50,8 +61,18 @@ function Password() {
 							required
 							onChange={passwordChangeHandler}
 							value={password}
+							onKeyPress={handleKeyPress}
 						/>
-						{error && <p className='password-error'>💔 wrong password</p>}
+						{error && (
+							<p className='password-error'>
+								<img
+									className='password-error--img'
+									src={BrokenHeartIcon}
+									alt='icon'
+								/>
+								wrong password
+							</p>
+						)}
 						<button className='password-btn' onClick={passwordBtnClick}>
 							<img className='password-btn__icon' src={RightArrow} alt='logo' />
 						</button>
