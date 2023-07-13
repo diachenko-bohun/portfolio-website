@@ -10,10 +10,6 @@ $extraLarge: 1200px;
 	@media screen and (max-width: $medium) {
 		width: 100%;
 	}
-
-	// @media screen and (max-width: $small) {
-	// 	margin: 0 15px;
-	// }
 }
 
 .card-img {
@@ -21,6 +17,7 @@ $extraLarge: 1200px;
 	background-size: cover;
 	line-height: 0;
 	background-color: #f8f8f8;
+	min-height: 150px;
 }
 
 .card-inner {
@@ -29,18 +26,31 @@ $extraLarge: 1200px;
 	padding-top: 10px;
 }
 
-.card-title {
-	font-weight: 400;
-	font-size: 18px;
-	text-transform: uppercase;
-	color: #000000;
+.card-head {
+	display: flex;
+	align-items: center;
+	&__title {
+		font-weight: 400;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #000000;
 
-	@media screen and (max-width: $large) {
-		font-size: 16px;
+		@media screen and (max-width: $large) {
+			font-size: 16px;
+		}
+		&:hover {
+			color: rgb(245, 121, 219);
+			transition: all 0.5s;
+		}
 	}
-	&:hover {
-		color: rgb(245, 121, 219);
-		transition: all 0.5s;
+
+	&__icon {
+		margin-left: 5px;
+		width: 20px;
+
+		@media screen and (max-width: $large) {
+			width: 18px;
+		}
 	}
 }
 

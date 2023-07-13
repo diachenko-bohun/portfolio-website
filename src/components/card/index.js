@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import './styles.scss';
+import LockIcon from '../../assets/img/svg/lockIcon.svg';
 
 import AOS from 'aos';
 
@@ -33,8 +34,15 @@ function Card({ item }) {
 			</Link>
 			<div className='card-inner'>
 				<div>
-					<Link to={NavigateTo} onClick={navigateAndReset}>
-						<h3 className='card-title'>{item.title}</h3>
+					<Link
+						to={NavigateTo}
+						onClick={navigateAndReset}
+						className='card-head'
+					>
+						<h3 className='card-head__title'>{item.title}</h3>
+						{!casesStore.access && (
+							<img className='card-head__icon' src={LockIcon} alt='icon' />
+						)}
 					</Link>
 					<p className='card-subtitle'>{item.subtitle}</p>
 				</div>

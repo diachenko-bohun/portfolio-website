@@ -26,7 +26,7 @@ const initialState = {
 		},
 		{
 			id: 4,
-			title: 'diagnostics.me',
+			title: 'Rentgen.me',
 			subtitle: '#webservice #medtech #b2c',
 			year: 2020,
 			img: require('../assets/img/png/itemImg4.png'),

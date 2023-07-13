@@ -13,10 +13,19 @@ import PeopleIcon from '../../assets/img/svg/peopleIcon.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles.scss';
+import { changeNavBg } from '../../utils/headerScroll';
 
 function Home() {
 	const [loader, setLoader] = useState(false);
 	const casesStore = useSelector(state => state.cases);
+	const [headerBg, setHeaderBg] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => changeNavBg(setHeaderBg));
+		return () => {
+			window.removeEventListener('scroll', () => changeNavBg(setHeaderBg));
+		};
+	}, []);
 
 	console.log('casesStore', casesStore);
 
@@ -37,7 +46,7 @@ function Home() {
 		return (
 			<div className='home-wrapper'>
 				<AnimCursor />
-				<Header />
+				<Header headerBg={headerBg} />
 				<Container>
 					<div
 						className='about-wrapper'
@@ -46,12 +55,12 @@ function Home() {
 						data-aos-easing='ease-in-sine'
 					>
 						<p className='about-text'>
-							I’m a UI/UX Designer with 3+ years of professional experience
+							I’m a UI/UX Designer with 4+ years of professional experience
 							<br />
 							Everything you see here is made by a human for
 							<span className='about-span'>users</span>
 							PEOPLE
-							<img className='about-img' src={PeopleIcon} alt='icon' />
+							{/* <img className='about-img' src={PeopleIcon} alt='icon' /> */}
 						</p>
 					</div>
 					<List data={casesStore.list} />

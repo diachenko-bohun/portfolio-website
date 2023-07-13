@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Footer from '../../components/footer';
@@ -23,8 +23,18 @@ import SmileIconHands from '../../assets/img/svg/smileIconHands.svg';
 import '../../utils/case-global.scss';
 import './styles.scss';
 import { useNavigateToTop } from '../../utils/useNavigateToTop';
+import { changeNavBg } from '../../utils/headerScroll';
 
 function Case3() {
+	const [headerBg, setHeaderBg] = useState(false);
+
+	useEffect(() => {
+		window.addEventListener('scroll', () => changeNavBg(setHeaderBg));
+		return () => {
+			window.removeEventListener('scroll', () => changeNavBg(setHeaderBg));
+		};
+	}, []);
+
 	const navigateToTop = useNavigateToTop();
 
 	const navigateAndReset = event => {
@@ -34,7 +44,7 @@ function Case3() {
 	return (
 		<div className='details-wrapper'>
 			<AnimCursor />
-			<Header />
+			<Header headerBg={headerBg} />
 			<div className='details-container'>
 				<div className='details-section details-section__white'>
 					<img className='details-img' src={Img1} alt='logo' />
