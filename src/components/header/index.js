@@ -19,7 +19,7 @@ function Header({ headerBg }) {
 			<Link to='/' onClick={navigateAndReset}>
 				<img className='header-logo' src={ReactLogo} alt='logo' />
 			</Link>
-			<a className='header-link' href='https://developer.mozilla.org'>
+			<a className='header-link' href='mailto:hi.kovaldesigner@gmail.com'>
 				LET’S TALK
 			</a>
 		</div>

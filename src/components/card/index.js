@@ -11,14 +11,14 @@ import 'aos/dist/aos.css';
 import { useNavigateToTop } from '../../utils/useNavigateToTop';
 
 function Card({ item }) {
-	const casesStore = useSelector(state => state.cases);
+	const accessStore = useSelector(state => state.access);
 	const navigateToTop = useNavigateToTop();
 
 	useEffect(() => {
 		AOS.init();
 	}, []);
 
-	const NavigateTo = casesStore.access
+	const NavigateTo = accessStore.access
 		? `/details-${item.id}`
 		: `/password/${item.id}`;
 
@@ -40,7 +40,7 @@ function Card({ item }) {
 						className='card-head'
 					>
 						<h3 className='card-head__title'>{item.title}</h3>
-						{!casesStore.access && (
+						{!accessStore.access && (
 							<img className='card-head__icon' src={LockIcon} alt='icon' />
 						)}
 					</Link>

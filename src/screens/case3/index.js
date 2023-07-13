@@ -199,7 +199,7 @@ function Case3() {
 								If you want the same →
 								<a
 									className='details-stages__span--link'
-									href='https://developer.mozilla.org'
+									href='mailto:hi.kovaldesigner@gmail.com'
 								>
 									hi.kovaldesigner@gmail.com
 								</a>

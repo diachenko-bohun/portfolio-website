@@ -27,8 +27,6 @@ function Home() {
 		};
 	}, []);
 
-	console.log('casesStore', casesStore);
-
 	useEffect(() => {
 		AOS.init();
 	}, []);
@@ -60,7 +58,6 @@ function Home() {
 							Everything you see here is made by a human for
 							<span className='about-span'>users</span>
 							PEOPLE
-							{/* <img className='about-img' src={PeopleIcon} alt='icon' /> */}
 						</p>
 					</div>
 					<List data={casesStore.list} />

@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	access: false,
 	list: [
 		{
 			id: 1,
@@ -37,15 +36,9 @@ const initialState = {
 export const casesSlice = createSlice({
 	name: 'cases',
 	initialState,
-	reducers: {
-		setAccess: (state, action) => {
-			state.access = action.payload;
-		},
-	},
 });
 
 // this is for dispatch
-export const { setAccess } = casesSlice.actions;
 
 // this is for configureStore
 export default casesSlice.reducer;

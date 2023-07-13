@@ -12,8 +12,8 @@ import BrokenHeartIcon from '../../assets/img/svg/brokenHeartIcon.svg';
 
 import './styles.scss';
 import AnimCursor from '../../components/animCursor';
-import { setAccess } from '../../redux/casesSlice';
 import { useDispatch } from 'react-redux';
+import { setAccess } from '../../redux/accessSlice';
 
 function Password() {
 	const { id } = useParams();
@@ -85,7 +85,7 @@ function Password() {
 					<div className='password-mail'>
 						<a
 							className='password-mail__link'
-							href='https://developer.mozilla.org'
+							href='mailto:hi.kovaldesigner@gmail.com'
 						>
 							hi.kovaldesigner@gmail.com
 						</a>
