@@ -29,7 +29,7 @@ function Password() {
 	};
 
 	const passwordBtnClick = () => {
-		if (password !== '123') {
+		if (password !== 'singapore_wind13') {
 			setError(true);
 		} else {
 			setPassword('');

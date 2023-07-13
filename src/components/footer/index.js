@@ -27,7 +27,7 @@ function Footer() {
 					<a className='footer-link' href='https://ux.pub/anastasiia_koval'>
 						UXPUB
 					</a>
-					<p className='footer-span'>©me.2023</p>
+					<p className='footer-span'>©koval.design2023</p>
 				</div>
 			</div>
 		</div>

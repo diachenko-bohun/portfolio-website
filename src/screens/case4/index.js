@@ -14,8 +14,6 @@ import Img6 from '../../assets/img/case4/img6.png';
 import Img7 from '../../assets/img/case4/img7.png';
 import Img8 from '../../assets/img/case4/img8.png';
 import Img9 from '../../assets/img/case4/img9.png';
-import Img10 from '../../assets/img/case4/img10.png';
-import Img11 from '../../assets/img/case4/img11.png';
 
 import RightArrowWhite from '../../assets/img/svg/rightArrowWhite.svg';
 import SmileIconHands from '../../assets/img/svg/smileIconHands.svg';
@@ -46,7 +44,7 @@ function Case4() {
 			<AnimCursor />
 			<Header headerBg={headerBg} />
 			<div className='details-container'>
-				<div className='details-section details-section__white'>
+				<div className='details-section line-height-0 details-section__white'>
 					<img className='details-img' src={Img1} alt='logo' />
 				</div>
 				<div className='details-section details-section__black'>
@@ -77,7 +75,7 @@ function Case4() {
 							<h1 className='details-description__title'>WHAT I DELIVERED</h1>
 							<p className='details-description__text'>
 								As a result, two versions of the site were presented. First
-								version for typical users and doctor's version
+								version for typical users and doctor's version.
 							</p>
 						</div>
 					</div>
@@ -88,12 +86,8 @@ function Case4() {
 			</div>
 
 			<div className='details-section details-section__white details-section__multyImg'>
-				<img className='details-img__multy mb-medium' src={Img3} alt='logo' />
-				<img className='details-img__multy mb-medium' src={Img4} alt='logo' />
-			</div>
-
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-large' src={Img5} alt='logo' />
+				<img className='details-img__multy mb-large' src={Img3} alt='logo' />
+				<img className='details-img__multy mb-large' src={Img4} alt='logo' />
 			</div>
 
 			<div className='details-section details-section__white'>
@@ -104,50 +98,23 @@ function Case4() {
 								<span className='details-stages__text--bold'>
 									THE FIRST STAGE
 								</span>{' '}
-								Together with the client we outlined the requirements for the
-								application that will contain educational materials.
-							</p>
-						</div>
-						<div className='details-stages__item'>
-							<p className='details-stages__text'>
-								<span className='details-stages__text--bold'>
-									THE SECOND STAGE
-								</span>{' '}
-								I сreated a convenient platform for storing training materials
-								which does not require large development costs due to
-								nativeness.
+								mobile version of the site was created you can familiarise
+								yourself with the conditions for processing scans, choose a
+								doctor and upload a scan.
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-large' src={Img6} alt='logo' />
+			<div className='details-section details-section__white details-section__multyImg'>
+				<img className='details-img__multy mb-medium' src={Img5} alt='logo' />
+				<img className='details-img__multy mb-medium' src={Img6} alt='logo' />
 			</div>
 
-			<div className='details-section details-section__white'>
-				<div className='details-stages'>
-					<div className='details-stages__inner'>
-						<div className='details-stages__item'>
-							<p className='details-stages__text'>
-								<span className='details-stages__text--bold'>
-									THE THIRD STAGE
-								</span>{' '}
-								also was created an application for creating reports on
-								practical work.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-medium' src={Img7} alt='logo' />
-			</div>
-
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-medium' src={Img8} alt='logo' />
+			<div className='details-section details-section__white details-section__multyImg'>
+				<img className='details-img__multy mb-medium' src={Img7} alt='logo' />
+				<img className='details-img__multy mb-medium' src={Img8} alt='logo' />
 			</div>
 
 			<div className='details-section details-section__white'>
@@ -160,35 +127,21 @@ function Case4() {
 						<div className='details-stages__item'>
 							<p className='details-stages__text'>
 								<span className='details-stages__text--bold'>
-									THE MAIN STAGE
+									THE SECOND STAGE
 								</span>{' '}
-								of my work was the creation of an administrative panel in which
-								the company will be able to track the progress of its students,
-								their level and interaction with supervisors in the learning
-								process.
+								attention was paid to the section of communication with the
+								doctor.Thus, after receiving the results, the patient can ask
+								the doctor a question and get a referral or consultation.
 							</p>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-medium' src={Img10} alt='logo' />
-			</div>
-
-			<div className='details-section details-section__white'>
-				<img className='details-img mb-large' src={Img11} alt='logo' />
-			</div>
-
-			<div className='details-section details-section__white'>
-				<div className='details-stages'>
-					<div className='details-stages__inner'>
 						<div className='details-stages__item'>
 							<p className='details-stages__text'>
 								<span className='details-stages__text--bold'>AS A RESULT</span>{' '}
-								the platform turned out to be quite convenient in order to
-								fulfill its goals, confirm the student's qualifications and
-								comfortably evaluate his work process.
+								a convenient platform was created a convenient platform was
+								created for interaction between the doctor and the patient in a
+								mobile mode and with the ability to track the process of
+								obtaining diagnostic results. In addition, the site has the
+								opportunity to get detailed advice.
 							</p>
 							<p className='details-stages__span'>
 								<img

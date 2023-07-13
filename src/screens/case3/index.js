@@ -46,7 +46,7 @@ function Case3() {
 			<AnimCursor />
 			<Header headerBg={headerBg} />
 			<div className='details-container'>
-				<div className='details-section details-section__white'>
+				<div className='details-section mob-pt-40 details-section__white'>
 					<img className='details-img' src={Img1} alt='logo' />
 				</div>
 				<div className='details-section details-section__black'>
@@ -113,7 +113,7 @@ function Case3() {
 								<span className='details-stages__text--bold'>
 									THE SECOND STAGE
 								</span>{' '}
-								I сreated a convenient platform for storing training materials
+								I сreated a convenient platform for storage training materials
 								which does not require large development costs due to
 								nativeness.
 							</p>
@@ -163,7 +163,7 @@ function Case3() {
 									THE MAIN STAGE
 								</span>{' '}
 								of my work was the creation of an administrative panel in which
-								the company will be able to track the progress of its students,
+								the company will be able to track the progress of students,
 								their level and interaction with supervisors in the learning
 								process.
 							</p>

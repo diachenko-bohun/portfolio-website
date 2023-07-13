@@ -53,7 +53,7 @@ function Case1() {
 							<h1 className='details-description__title'>team/role</h1>
 							<p className='details-description__text'>
 								The team consisted of a designer, a development team and a
-								manager who represented the interests of the client
+								manager who represented the interests of the client.
 							</p>
 						</div>
 						<div className='details-description__item'>
@@ -113,7 +113,7 @@ function Case1() {
 									THE SECOND STAGE
 								</span>{' '}
 								the wishes of students who had the need to save materials and
-								plan lessons were taken
+								plan lessons were taken.
 							</p>
 						</div>
 					</div>
@@ -141,8 +141,9 @@ function Case1() {
 									THE THIRD STAGE
 								</span>{' '}
 								a section for the sale of beauty products has been added to the
-								mobile application for faster purchases. It was also possible to
-								add only verified reviews after making a purchase.
+								mobile application for the faster purchases. It was also
+								possible to add only verified reviews after making a
+								transaction.
 							</p>
 						</div>
 						<div className='details-stages__item'>

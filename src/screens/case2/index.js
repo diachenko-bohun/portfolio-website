@@ -44,7 +44,7 @@ function Case2() {
 			<AnimCursor />
 			<Header headerBg={headerBg} />
 			<div className='details-container'>
-				<div className='details-section details-section__white'>
+				<div className='details-section mob-pt-40 details-section__white'>
 					<img className='details-img' src={Img1} alt='logo' />
 				</div>
 				<div className='details-section details-section__black'>
@@ -52,7 +52,7 @@ function Case2() {
 						<div className='details-description__item'>
 							<h1 className='details-description__title'>team/role</h1>
 							<p className='details-description__text'>
-								I worked as a contract Product Designer for a financial startup
+								I worked as a contract product designer for a financial startup
 								and collaborated with the development team, product manager,
 								business representatives.
 							</p>
@@ -98,7 +98,7 @@ function Case2() {
 									THE FIRST STAGE
 								</span>{' '}
 								I worked with analytical data SimilarWeb, researched the
-								competitive environment in the local market. and considered the
+								competitive environment in the local market and considered the
 								trend solutions of the leaders of this niche in different
 								countries.
 							</p>
