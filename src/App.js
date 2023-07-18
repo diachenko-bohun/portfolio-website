@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Home from './screens/home';
 import Password from './screens/password';
 import { useSelector } from 'react-redux';
@@ -12,7 +12,7 @@ function App() {
 	const accessStore = useSelector(state => state.access);
 
 	return (
-		<Router>
+		<HashRouter>
 			<Routes>
 				<Route exact path='/' element={<Home />} />
 				<Route path='/password/:id' element={<Password />} />
@@ -21,7 +21,7 @@ function App() {
 				{accessStore.access && <Route path='/details-3' element={<Case3 />} />}
 				{accessStore.access && <Route path='/details-4' element={<Case4 />} />}
 			</Routes>
-		</Router>
+		</HashRouter>
 	);
 }
 
